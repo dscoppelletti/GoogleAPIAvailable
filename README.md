@@ -100,7 +100,7 @@ following on `logcat`:
         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
         at dalvik.system.NativeStart.main(Native Method)
 
-5. Finnaly my `AlertDialog` appears:
+5. Finally my `AlertDialog` appears:
 
         Google Play service not available.
         
