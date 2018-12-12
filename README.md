@@ -1,7 +1,7 @@
 GoogleAPIAvailable
 ==================
 
-Bug in the the method `makeGooglePlayServicesAvailable` of the object
+Problem in the the method `makeGooglePlayServicesAvailable` of the object
 `GoogleApiAvailability`.
 
 > You have to use a device (or an emulator) without Play Store or Google Play
