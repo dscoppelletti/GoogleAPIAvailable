@@ -5,7 +5,7 @@ Bug in the the method `makeGooglePlayServicesAvailable` of the object
 `GoogleApiAvailability`.
 
 > You have to use a device (or an emulator) without Play Store or Google Play
-> Services in order to reproduce the bug.
+> Services installed in order to reproduce the problem.
 
 ## Test 1
 
@@ -62,7 +62,7 @@ inside its method `onCreate`.
         Google API Available won't run without Google Play services, which are
         not supported by your device.
 
-3. Close the dialog by clicking the `Back` button (o by clicking out of the
+3. Close the dialog by clicking the `Back` button (or by clicking out of the
 `AlertDialog`).
 4. The `AlertDialog` disappears, and the `Task` started by the method
 `makeGooglePlayServicesAvailable` fails immediately and you can see the
@@ -111,5 +111,5 @@ following on `logcat`:
 I think the `Task` started by the method `makeGooglePlayServicesAvailable`
 should fail after you close the first `AlertDialog` regardless how you close the
 dialog. Thus I could terminate the App if I do not want the App runs without
-Google Play Services.
+Google Play Services installed.
 
